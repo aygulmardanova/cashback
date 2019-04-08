@@ -1,0 +1,1 @@
+# Cashback calculator [![Build Status](https://travis-ci.org/aygulmardanova/cashback.svg?branch=master)](https://travis-ci.org/aygulmardanova/cashback)
