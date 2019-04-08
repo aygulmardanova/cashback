@@ -9,16 +9,19 @@
 </head>
 <body>
 <p>
-    <label for="purchase">Сумма покупки:</label>
-    <input type="number" name="purchase" id="purchase">
+    <label for="purchaseUsual">Сумма покупки в категории <i>Обычная покупка</i> (1%):</label>
+    <br/>
+    <input type="number" name="purchaseUsual" id="purchaseUsual">
 </p>
 <p>
-    <label for="category">Категория:</label>
-    <select name="category" id="category">
-        <option value="usual">Обычная покупка (1%)</option>
-        <option value="increased">Повышенный кэшбэк (5%)</option>
-        <option value="special">Спецпредложение (30%)</option>
-    </select>
+    <label for="purchaseIncreased">Сумма покупки в категории <i>Повышенный кэшбэк</i> (5%):</label>
+    <br/>
+    <input type="number" name="purchaseIncreased" id="purchaseIncreased">
+</p>
+<p>
+    <label for="purchaseSpecial">Сумма покупки в категории <i>Спецпредложение</i> (30%):</label>
+    <br/>
+    <input type="number" name="purchaseSpecial" id="purchaseSpecial">
 </p>
 
 <button id="cb-btn">
