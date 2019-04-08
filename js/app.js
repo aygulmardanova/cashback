@@ -24,12 +24,3 @@ export function getCB() {
     document.getElementById("cb").innerHTML = cashBack;
     return cashBack;
 }
-
-{
-    let purchase = 100;
-
-    console.log('usual cashback for purchase 100: ' + getCashBack(purchase, null, null));
-    console.log('increased cashback for purchase 100: ' + getCashBack(null, purchase, null));
-    console.log('special cashback for purchase 100: ' + getCashBack(null, null, purchase));
-    console.log('purchases in three categories: ' + getCashBack(purchase, purchase, purchase));
-}
