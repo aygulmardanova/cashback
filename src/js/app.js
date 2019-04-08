@@ -1,5 +1,7 @@
 import {getCashBack} from "./lib.js";
 
+document.querySelector('#cbBtn').addEventListener('click', getCB);
+
 export function getCB() {
 
     let purchase = document.getElementById("purchase").value;
