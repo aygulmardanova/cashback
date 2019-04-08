@@ -4,22 +4,10 @@ document.querySelector('#cb-btn').addEventListener('click', setCB);
 
 export function setCB() {
 
-    const purchase = document.getElementById("purchase").value;
-    const category = document.getElementById("category").value;
+    const purchaseUsual = document.getElementById("purchaseUsual").value;
+    const purchaseIncreased = document.getElementById("purchaseIncreased").value;
+    const purchaseSpecial = document.getElementById("purchaseSpecial").value;
 
-    let cashBack;
-    switch (category) {
-        case 'usual':
-            cashBack = getCashBack(purchase, null, null);
-            break;
-        case 'increased':
-            cashBack = getCashBack(null, purchase, null);
-            break;
-        case 'special':
-            cashBack = getCashBack(null, null, purchase);
-            break;
-    }
-
-    console.log(cashBack);
-    document.getElementById("cb").innerHTML = cashBack;
+    document.getElementById("cb").innerHTML =
+        getCashBack(purchaseUsual, purchaseIncreased, purchaseSpecial);
 }
