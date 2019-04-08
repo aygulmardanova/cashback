@@ -4,8 +4,8 @@ document.querySelector('#cb-btn').addEventListener('click', getCB);
 
 export function getCB() {
 
-    let purchase = document.getElementById("purchase").value;
-    let category = document.getElementById("category").value;
+    const purchase = document.getElementById("purchase").value;
+    const category = document.getElementById("category").value;
 
     let cashBack;
     switch (category) {
