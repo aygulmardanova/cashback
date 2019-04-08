@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CashBack calculator</title>
+</head>
+<body>
+<script src="js/app.js" type="module"></script>
+
+<p>
+    <label for="purchase">Сумма покупки:</label>
+    <input type="number" name="purchase" id="purchase">
+</p>
+<p>
+    <label for="category">Категория:</label>
+    <select name="category" id="category">
+        <option value="usual">Обычная покупка (1%)</option>
+        <option value="increased">Повышенный кэшбэк (5%)</option>
+        <option value="special">Спецпредложение (30%)</option>
+    </select>
+</p>
+
+<button id="cbBtn">
+    Рассчитать кэшбэк
+</button>
+<script type="module">
+    import {getCB} from './js/app.js';
+
+    document.querySelector('#cbBtn').addEventListener('click', getCB)
+</script>
+<p>За прошедший период вы заработали:
+    <output id="cb">0</output>
+    рублей
+</p>
+</body>
+</html>
