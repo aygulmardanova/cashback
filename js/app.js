@@ -1,8 +1,8 @@
 import {getCashBack} from "./lib.js";
 
-document.querySelector('#cb-btn').addEventListener('click', getCB);
+document.querySelector('#cb-btn').addEventListener('click', setCB);
 
-export function getCB() {
+export function setCB() {
 
     const purchase = document.getElementById("purchase").value;
     const category = document.getElementById("category").value;
@@ -22,5 +22,4 @@ export function getCB() {
 
     console.log(cashBack);
     document.getElementById("cb").innerHTML = cashBack;
-    return cashBack;
 }
