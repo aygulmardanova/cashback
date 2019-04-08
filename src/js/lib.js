@@ -4,9 +4,7 @@ export function getCashBack(purchaseUsual, purchaseIncreased, purchaseSpecial) {
     const increasedCashBack = 0.05;
     const specialCashBack = 0.3;
 
-    const cb = purchaseUsual * usualCashBack +
+    return purchaseUsual * usualCashBack +
         purchaseIncreased * increasedCashBack +
         purchaseSpecial * specialCashBack;
-
-    return cb;
 }
