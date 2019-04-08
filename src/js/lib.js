@@ -8,7 +8,7 @@ export function getCashBack(purchaseUsual, purchaseIncreased, purchaseSpecial) {
         purchaseIncreased * increasedCashBack +
         purchaseSpecial * specialCashBack;
 
-    console.log('за прошедший период вы заработали: %s рублей', cb);
+    console.log(`за прошедший период вы заработали: ${cb} рублей`);
 
     return cb;
 }
