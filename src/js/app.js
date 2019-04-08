@@ -1,6 +1,6 @@
 import {getCashBack} from "./lib.js";
 
-document.querySelector('#cbBtn').addEventListener('click', getCB);
+document.querySelector('#cb-btn').addEventListener('click', getCB);
 
 export function getCB() {
 
